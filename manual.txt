@@ -1,0 +1,11 @@
+prerequisite:
+pip install numpy 
+pip install pandas
+pip install mathplotlib
+pip install scikit-learn
+pip install streamlit
+
+manual:
+download submit.py and Training_data.csv
+start training process: python submit.py
+initialize website: streamlit run dashboard.py

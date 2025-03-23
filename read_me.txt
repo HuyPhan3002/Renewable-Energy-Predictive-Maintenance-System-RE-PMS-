@@ -16,7 +16,7 @@ Classification Report:
 weighted avg       0.99      0.99      0.99      5000
 
 
-After training, the model the model has 99% precision and 81% recall when predicting failure.
+After training, the model the model has 99% precision and 81% recall when predicting failure. In total, the model have the accuracy of 98.88%.
 
 Sample email:
 [QUAR] ⚠️ Predictive Maintenance Alert: Potential Failures Detected

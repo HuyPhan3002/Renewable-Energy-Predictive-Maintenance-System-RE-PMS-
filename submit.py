@@ -98,6 +98,12 @@ failure_count = len(failure_cases)
 if failure_count > 0:
     send_email_alert(failure_count)
 
+# Save predictions for dashboard
+if len(failure_cases) > 0:
+    failure_cases["Machine ID"] = sorted_failure_id
+    failure_cases.to_csv("predictions.csv", index=False)
+    print("Predictions saved to predictions.csv")
+
 # Evaluate the model
 accuracy = accuracy_score(y_test, y_pred)
 report = classification_report(y_test, y_pred)

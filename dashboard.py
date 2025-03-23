@@ -7,7 +7,7 @@ st.set_page_config(page_title="Predictive Maintenance Dashboard", layout="wide")
 st.title("🔧 Predictive Maintenance Dashboard")
 
 # Load predictions
-data_path = r"D:\class\CS480\predictions.csv"
+data_path = "predictions.csv" # Modify prediction data set
 try:
     df = pd.read_csv(data_path)
 
